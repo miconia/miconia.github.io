@@ -27,23 +27,23 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: ' fullbright ',
+      name: '⠀fullbright⠀',
       link: 'https://steamcommunity.com/groups/600600',
     },
     {
-      name: ' discord ',
+      name: '⠀discord⠀',
       link: 'https://discord.com/invite/MSgu32t',
     },
     {
-      name: ' 2008 ',
+      name: '⠀2008⠀',
       link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
     {
-      name: ' telegram ',
+      name: '⠀telegram⠀',
       link: 'https://t.me/miconia',
     },
     {
-      name: ' ♡ ',
+      name: '⠀♡⠀',
       link: 'https://ru.pinterest.com/mic0nia/~~/',
     },
   ];
@@ -55,7 +55,7 @@ $(document).ready(() => {
 
     link = $('#marquee').children('a').last();
 
-    if (i != links.length - 1) $('#marquee').append('<img class="emoticon" src="assets/icons/icons8-16.png">');
+    if (i != links.length - 1) $('#marquee').append('<img class="emoticon" src="assets/icons/icons9.png">');
   }
 
   if (mobileAndTabletCheck()) {
