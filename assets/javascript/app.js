@@ -12,7 +12,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-  brandDescription = ['OG#2624', 'realm clan', 'notoriou$$', 'skeet user', 'hvh csgo team', 'winning since 2009', 'You are listening to: Tazdied - Dead to me'];
+  brandDescription = ['miconia', 'quartz', 'fullbright', '2019 fatality regestration', 'kz csgo team', 'differenda v rot ebal', '~q/\/~'];
 
   titleChanger = (text, delay) => {
     if (!text) return;
