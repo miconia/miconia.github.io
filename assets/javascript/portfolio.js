@@ -31,7 +31,7 @@ $(document).ready(() => {
       link: 'https://steamcommunity.com/groups/600600',
     },
     {
-      name: 'Discord',
+      name: 'discord',
       link: 'https://discord.com/invite/MSgu32t',
     },
     {
@@ -39,7 +39,7 @@ $(document).ready(() => {
       link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
     {
-      name: 'Telegram',
+      name: 'telegram',
       link: 'https://t.me/miconia',
     },
     {
@@ -55,7 +55,7 @@ $(document).ready(() => {
 
     link = $('#marquee').children('a').last();
 
-    if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/icons/rose.png"> ');
+    if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/icons/330x192.png"> ');
   }
 
   if (mobileAndTabletCheck()) {
@@ -65,7 +65,7 @@ $(document).ready(() => {
   }
 
   app.titleChanger(['f', 'fu','ful','full','fullb','fullbr','fullbri','fullbrig','fullbrigh','fullbright','fullbrigh','fullbrig','fullbri','fullbr','fullb','full','ful','fu']);
-  app.iconChanger(['assets/icons/png-clipart-computer-icons-coffin-icon-design-coffin-s-logo-cemetery.png']);
+  app.iconChanger(['assets/icons/330x192.png']);
 });
 
 if ($.cookie('videoTime')) {
