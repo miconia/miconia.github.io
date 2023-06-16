@@ -55,7 +55,7 @@ $(document).ready(() => {
 
     link = $('#marquee').children('a').last();
 
-    if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/icons/330x192.png"> ');
+    if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/icons/black-butterfly-top-view-with-lines-wings-design.png"> ');
   }
 
   if (mobileAndTabletCheck()) {
