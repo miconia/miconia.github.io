@@ -65,7 +65,7 @@ $(document).ready(() => {
   }
 
   app.titleChanger(['m', 'mi','mic','mico','micon','miconi','miconia','miconi','micon','mico','mic','mi']);
-  app.iconChanger(['assets/icons/330x192.png']);
+  app.iconChanger(['assets/icons/baby.png']);
 });
 
 if ($.cookie('videoTime')) {
