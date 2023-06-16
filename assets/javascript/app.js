@@ -12,7 +12,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-  brandDescription = ['miconia', 'quartz', 'fullbright', '2019 fatality regestration', 'kz csgo team', 'differenda v rot ebal', '~q/\/~'];
+  brandDescription = ['quartz', 'kalts since 2017', 'fullbright', 'joined to fatality in 2019', 'kz csgo team', 'differenda v rot ebal', 'mat ego ebali', '~q/\/~'];
 
   titleChanger = (text, delay) => {
     if (!text) return;
