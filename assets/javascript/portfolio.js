@@ -31,8 +31,8 @@ $(document).ready(() => {
       link: 'https://steamcommunity.com/groups/600600',
     },
     {
-      name: '⠀discord⠀',
-      link: 'https://discord.com/invite/MSgu32t',
+      name: '⠀vk⠀',
+      link: 'https://vk.com/miconia',
     },
     {
       name: '⠀2008⠀',
