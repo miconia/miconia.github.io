@@ -64,7 +64,7 @@ $(document).ready(() => {
     app.shouldIgnoreVideo = true;
   }
 
-  app.titleChanger(['v', 'vo','vol','volt','volte','volted','volted.','volted.c','volted.cc','volted.c','volted.','volted','volte','volt','vol','vo']);
+  app.titleChanger(['f', 'fu','ful','full','fullb','fullbr','fullbri','fullbrig','fullbrigh','fullbright','fullbrigh','fullbrig','fullbri','fullbr','fullb','full','ful','fu']);
   app.iconChanger(['assets/icons/rose.png']);
 });
 
@@ -99,7 +99,7 @@ $('html').on('contextmenu', (event) => {
   img.src = 'assets/icons/rose.png';
   img.width = 18;
   img.height = 18;
-  img.alt = 'volted.cc';
+  img.alt = 'fullbright';
   img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
   img.className = `troll ${trollfaceLight}`;
 
@@ -141,7 +141,7 @@ const writeLine = (text, speed, timeout, callback) => {
 };
 
 $.getJSON(ipgeolocation, (data) => {
-  writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[volted.cc]</span>..."], 30, () => {
+  writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[fullbright]</span>..."], 30, () => {
     if (app.skippedIntro) return;
 
     clearCursor();
@@ -157,7 +157,7 @@ $.getJSON(ipgeolocation, (data) => {
 
       clearCursor();
 
-      writeLine([`<i style='color: #F62459'>volted.cc ///</i>`], 120, 500, () => {
+      writeLine([`<i style='color: #F62459'>fullbright ///</i>`], 120, 500, () => {
         timeouts.push(
           setTimeout(() => {
             if (app.skippedIntro) return;
