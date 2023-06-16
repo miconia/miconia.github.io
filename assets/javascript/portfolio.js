@@ -64,7 +64,7 @@ $(document).ready(() => {
     app.shouldIgnoreVideo = true;
   }
 
-  app.titleChanger(['f', 'fu','ful','full','fullb','fullbr','fullbri','fullbrig','fullbrigh','fullbright','fullbrigh','fullbrig','fullbri','fullbr','fullb','full','ful','fu']);
+  app.titleChanger(['m', 'mi','mic','mico','micon','miconi','miconia','miconi','micon','mico','mic','mi']);
   app.iconChanger(['assets/icons/330x192.png']);
 });
 
