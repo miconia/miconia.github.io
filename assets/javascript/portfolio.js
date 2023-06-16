@@ -27,24 +27,24 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: 'Steam',
-      link: 'https://steamcommunity.com/groups/voltedcc',
+      name: 'fullbright',
+      link: 'https://steamcommunity.com/groups/600600',
     },
     {
       name: 'Discord',
       link: 'https://discord.com/invite/MSgu32t',
     },
     {
-      name: 'Twitch',
-      link: 'https://www.twitch.tv/eswj',
+      name: '2008',
+      link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
     {
-      name: 'Weheartit',
-      link: 'https://weheartit.com/scripter',
+      name: 'Telegram',
+      link: 'https://t.me/miconia',
     },
     {
-      name: 'SoundCloud',
-      link: 'https://soundcloud.com/0154',
+      name: '♡',
+      link: 'https://ru.pinterest.com/mic0nia/~~/',
     },
   ];
 
@@ -65,7 +65,7 @@ $(document).ready(() => {
   }
 
   app.titleChanger(['f', 'fu','ful','full','fullb','fullbr','fullbri','fullbrig','fullbrigh','fullbright','fullbrigh','fullbrig','fullbri','fullbr','fullb','full','ful','fu']);
-  app.iconChanger(['assets/icons/rose.png']);
+  app.iconChanger(['assets/icons/png-clipart-computer-icons-coffin-icon-design-coffin-s-logo-cemetery.png']);
 });
 
 if ($.cookie('videoTime')) {
