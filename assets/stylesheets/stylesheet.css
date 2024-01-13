@@ -175,7 +175,7 @@ input {
   width: 0;
 }
 
-#rainbow {
+1#rainbow {
   background-color: blue;  
     float:top;
     max-width: 100%;
@@ -186,7 +186,7 @@ input {
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-  }
+}1
   
   @keyframes example {
     0% {

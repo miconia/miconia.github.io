@@ -26,17 +26,14 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 
 $(document).ready(() => {
   const links = [
+    
     {
-      name: '⠀fullbright⠀',
-      link: 'https://steamcommunity.com/groups/600600',
+      name: '⠀instagram⠀',
+      link: 'https://www.instagram.com/miconiia/',
     },
     {
       name: '⠀vk⠀',
       link: 'https://vk.com/miconia',
-    },
-    {
-      name: '⠀2008⠀',
-      link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
     {
       name: '⠀telegram⠀',
@@ -46,6 +43,15 @@ $(document).ready(() => {
       name: '⠀♡⠀',
       link: 'https://ru.pinterest.com/mic0nia/~~/',
     },
+    {
+      name: '⠀fullbright⠀',
+      link: 'https://steamcommunity.com/groups/600600',
+    },
+    {
+      name: '⠀2008⠀',
+      link: 'https://steamcommunity.com/profiles/76561197997579653',
+    },
+    
   ];
 
   for (let i in links) {
@@ -91,7 +97,7 @@ document.body.onkeyup = (event) => {
   }
 };
 
-$('html').on('contextmenu', (event) => {
+1$('html').on('contextmenu', (event) => {
   const img = document.createElement('img');
 
   const trollfaceLight = app.skippedIntro ? '' : 'trollface-light';
@@ -104,7 +110,7 @@ $('html').on('contextmenu', (event) => {
   img.className = `troll ${trollfaceLight}`;
 
   document.body.appendChild(img);
-});
+});1
 
 setInterval(() => {
   $('.troll').remove();
