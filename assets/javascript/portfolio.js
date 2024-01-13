@@ -97,21 +97,6 @@ document.body.onkeyup = (event) => {
   }
 };
 
-1$('html').on('contextmenu', (event) => {
-  const img = document.createElement('img');
-
-  const trollfaceLight = app.skippedIntro ? '' : 'trollface-light';
-
-  img.src = 'assets/icons/rose.png';
-  img.width = 18;
-  img.height = 18;
-  img.alt = 'fullbright';
-  img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
-  img.className = `troll ${trollfaceLight}`;
-
-  document.body.appendChild(img);
-});1
-
 setInterval(() => {
   $('.troll').remove();
 }, 600);
