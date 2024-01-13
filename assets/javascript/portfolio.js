@@ -26,14 +26,17 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 
 $(document).ready(() => {
   const links = [
-    
     {
-      name: '⠀instagram⠀',
-      link: 'https://www.instagram.com/miconiia/',
+      name: '⠀fullbright⠀',
+      link: 'https://steamcommunity.com/groups/600600',
     },
     {
       name: '⠀vk⠀',
       link: 'https://vk.com/miconia',
+    },
+    {
+      name: '⠀2008⠀',
+      link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
     {
       name: '⠀telegram⠀',
@@ -43,15 +46,6 @@ $(document).ready(() => {
       name: '⠀♡⠀',
       link: 'https://ru.pinterest.com/mic0nia/~~/',
     },
-    {
-      name: '⠀fullbright⠀',
-      link: 'https://steamcommunity.com/groups/600600',
-    },
-    {
-      name: '⠀2008⠀',
-      link: 'https://steamcommunity.com/profiles/76561197997579653',
-    },
-    
   ];
 
   for (let i in links) {
@@ -96,6 +90,21 @@ document.body.onkeyup = (event) => {
     return (app.backgroundToggler = !app.backgroundToggler);
   }
 };
+
+$('html').on('contextmenu', (event) => {
+  const img = document.createElement('img');
+
+  const trollfaceLight = app.skippedIntro ? '' : 'trollface-light';
+
+  img.src = 'assets/icons/rose.png';
+  img.width = 18;
+  img.height = 18;
+  img.alt = 'fullbright';
+  img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
+  img.className = `troll ${trollfaceLight}`;
+
+  document.body.appendChild(img);
+});
 
 setInterval(() => {
   $('.troll').remove();
