@@ -18,8 +18,6 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
 
 'use strict';
 
-const ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=71d5413f6eb746e9bbbae5559f600a0a';
-
 const timeouts = [];
 
 const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
