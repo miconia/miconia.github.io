@@ -105,4 +105,3 @@ $('html').on('contextmenu', (event) => {
 
   document.body.appendChild(img);
 });
-
