@@ -81,20 +81,6 @@ document.addEventListener('contextmenu', (event) => {
   event.preventDefault();
 });
 
-document.body.onkeyup = (event) => {
-  if (event.keyCode == 32 && app.skippedIntro) {
-    if (app.backgroundToggler) {
-      app.videoElement.play();
-      app.audioElement.play();
-    } else {
-      app.videoElement.pause();
-      app.audioElement.pause();
-    }
-
-    return (app.backgroundToggler = !app.backgroundToggler);
-  }
-};
-
 const clearCursor = () => {
   return $('span').siblings('.typed-cursor').css('opacity', '0');
 };
