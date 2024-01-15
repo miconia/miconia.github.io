@@ -27,7 +27,7 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: '⠀telegram⠀',
+      name: <a class="magic-hover magic-hover__square">⠀telegram⠀</a>,
       link: 'https://t.me/miconia',
     },
     {
