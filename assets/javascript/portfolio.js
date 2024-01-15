@@ -180,7 +180,6 @@ $('.top-right').remove();
       });
     }, 200);
   });
-};
 
 const clearCursor = () => {
   return $('span').siblings('.typed-cursor').css('opacity', '0');
