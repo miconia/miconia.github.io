@@ -32,8 +32,7 @@ $(document).ready(() => {
     },
     {
       name: '⠀instagram⠀',
-      link:
-'https://www.instagram.com/miconiia?igsh=c3h2cTI4MnI4enJ1',
+      link: 'https://www.instagram.com/miconiia?igsh=c3h2cTI4MnI4enJ1',
     },
     {
       name: '⠀vk⠀',
@@ -191,9 +190,10 @@ const skipIntro = () => {
 $('.top-right').remove();
 
   $('#main').fadeOut(100, () => {
-    $('#main').remove();
 
-    $('#marquee').marquee({
+    $('#main').remove();
+    
+     $('#marquee').marquee({
       duration: 15000,
       gap: 420,
       delayBeforeStart: 1000,
