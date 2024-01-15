@@ -168,6 +168,10 @@ body,
   -ms-filter: invert(100%);
 }
 
+a:hover {
+  color: #a8a8a8;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
