@@ -95,28 +95,10 @@ document.body.onkeyup = (event) => {
   }
 };
 
-$('html').on('contextmenu', (event) => {
-  const img = document.createElement('img');
-
-  const trollfaceLight = app.skippedIntro ? '' : 'trollface-light';
-
-  img.src = 'assets/icons/rose.png';
-  img.width = 18;
-  img.height = 18;
-  img.alt = 'fullbright';
-  img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
-  img.className = `troll ${trollfaceLight}`;
-
-  document.body.appendChild(img);
-});
-
 setInterval(() => {
   $('.troll').remove();
 }, 600);
 
-$('.skip').click(() => {
-  skipIntro();
-});
 
 $.fn.extend({
   animateCss: function (animationName) {
@@ -143,49 +125,6 @@ const writeLine = (text, speed, timeout, callback) => {
     });
   }, timeout);
 };
-
-$.getJSON(ipgeolocation, (data) => {
-  writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[fullbright]</span>..."], 30, () => {
-    if (app.skippedIntro) return;
-
-    clearCursor();
-
-    const usernames = ['user', 'dude'];
-
-    const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
-    const country = data.country_name ? data.country_name : 'your country';
-    const city = data.city ? data.city : 'your city';
-
-    writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome back, <i style='color: #0f0'>${ip}</i>! /// Location ${city}, ${country}.`], 30, 500, () => {
-      if (app.skippedIntro) return;
-
-      clearCursor();
-
-      writeLine([`<i style='color: #F62459'>fullbright ///</i>`], 120, 500, () => {
-        timeouts.push(
-          setTimeout(() => {
-            if (app.skippedIntro) return;
-
-            clearCursor();
-
-            setTimeout(() => {
-              skipIntro();
-            }, 500);
-          }, 1000)
-        );
-      });
-    });
-  });
-});
-
-const skipIntro = () => {
-  if (app.skippedIntro) return;
-
-  app.skippedIntro = true;
-
-  timeouts.forEach((timeout) => {
-    clearTimeout(timeout);
-});
 
 $('.top-right').remove();
 
