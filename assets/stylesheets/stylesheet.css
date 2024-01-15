@@ -23,7 +23,8 @@ a {
 
 body,
 input {
-  color: #e4e3e3
+  color: #e4e3e3;
+  background-color: #000000;
 }
 
 @font-face {
@@ -174,77 +175,3 @@ body,
 a:hover {
   color: #a8a8a8;
 }
-
-#rainbow {
-  background-color: blue;  
-    float:top;
-    max-width: 100%;
-    height:3px;
-    border: 0px solid white;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes example {
-    0% {
-      background-color: red; 
-    }
-    12% {
-      background-color: orange; 
-    }
-    25% {
-      background-color: yellow;  
-    }
-    37% {
-      background-color: Chartreuse;  
-    }
-    50% {
-      background-color: cyan; 
-    }
-    62% {
-      background-color: blue; 
-    }
-    75% {
-      background-color: DarkOrchid;  
-    }
-    78% {
-      background-color: DeepPink;
-    }
-    100% {
-      background-color: red;
-    }
-  }
-  
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes example {
-    0% {
-      background-color: red; 
-    }
-    12% {
-      background-color: orange; 
-    }
-    25% {
-      background-color: yellow;  
-    }
-    37% {
-      background-color: Chartreuse;  
-    }
-    50% {
-      background-color: cyan; 
-    }
-    62% {
-      background-color: blue; 
-    }
-    75% {
-      background-color: DarkOrchid;  
-    }
-    78% {
-      background-color: DeepPink;
-    }
-    100% {
-      background-color: red;
-    }
-  }
