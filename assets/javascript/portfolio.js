@@ -126,13 +126,21 @@ const writeLine = (text, speed, timeout, callback) => {
   }, timeout);
 };
 
-$('.top-right').remove();
+const skipIntro = () => {
+  if (app.skippedIntro) return;
+
+  app.skippedIntro = true;
+
+  timeouts.forEach((timeout) => {
+    clearTimeout(timeout);
+  });
+
+  $('.top-right').remove();
 
   $('#main').fadeOut(100, () => {
-
     $('#main').remove();
-    
-     $('#marquee').marquee({
+
+    $('#marquee').marquee({
       duration: 15000,
       gap: 420,
       delayBeforeStart: 1000,
@@ -180,6 +188,7 @@ $('.top-right').remove();
       });
     }, 200);
   });
+};
 
 const clearCursor = () => {
   return $('span').siblings('.typed-cursor').css('opacity', '0');
