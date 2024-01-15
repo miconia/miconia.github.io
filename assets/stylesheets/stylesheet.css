@@ -22,10 +22,6 @@ a {
 }
 
 body,
-input {
-  color: #e4e3e3;
-  background-color: #000;
-}
 
 @font-face {
   font-family: courier_regular;
