@@ -172,6 +172,10 @@ body,
   width: 0;
 }
 
+a:hover {
+  color: #a8a8a8;
+}
+
 #rainbow {
   background-color: blue;  
     float:top;
@@ -185,10 +189,6 @@ body,
     animation-iteration-count: infinite;
   }
 
-a:hover {
-  color: #a8a8a8;
-}
-  
   @keyframes example {
     0% {
       background-color: red; 
