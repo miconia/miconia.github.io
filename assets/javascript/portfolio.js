@@ -32,7 +32,8 @@ $(document).ready(() => {
     },
     {
       name: '⠀instagram⠀',
-      link: 'https://ru.pinterest.com/mic0nia/~~/',
+      link:
+'https://www.instagram.com/miconiia?igsh=c3h2cTI4MnI4enJ1',
     },
     {
       name: '⠀vk⠀',
