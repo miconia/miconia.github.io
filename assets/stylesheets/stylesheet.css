@@ -24,7 +24,7 @@ a {
 body,
 input {
   color: #e4e3e3;
-  background-color: #ff0000;
+  background-color: #000000;
 }
 
 @font-face {
@@ -63,9 +63,6 @@ pre {
 
 .box,
 body,
-input {
-  background-color: #0066ff;
-}
 
 .box {
   padding: 15px;
