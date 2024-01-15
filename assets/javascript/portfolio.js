@@ -27,7 +27,7 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: <a class="magic-hover magic-hover__square">⠀telegram⠀</a>,
+      name: '⠀telegram⠀',
       link: 'https://t.me/miconia',
     },
     {
@@ -94,11 +94,6 @@ document.body.onkeyup = (event) => {
     return (app.backgroundToggler = !app.backgroundToggler);
   }
 };
-
-setInterval(() => {
-  $('.troll').remove();
-}, 600);
-
 
 $.fn.extend({
   animateCss: function (animationName) {
