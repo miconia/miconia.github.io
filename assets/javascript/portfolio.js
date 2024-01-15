@@ -186,9 +186,9 @@ const skipIntro = () => {
 
   timeouts.forEach((timeout) => {
     clearTimeout(timeout);
-  });
+});
 
-  $('.top-right').remove();
+$('.top-right').remove();
 
   $('#main').fadeOut(100, () => {
     $('#main').remove();
