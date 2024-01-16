@@ -52,10 +52,10 @@ $(document).ready(() => {
     },
   ];
 
-  for (let i in links) {
-    let link = links[i];
+  for (var i in links) {
+    var link = links[i];
 
-    $('#marquee').append(`<a class="magic-hover magic-hover__square" href="${link.link}" target="_BLANK">${link.name}</a>`);
+    $('#marquee').append(`<a href="${link.link}" target="_BLANK">${link.name}</a>`);
 
     link = $('#marquee').children('a').last();
 
@@ -95,6 +95,10 @@ document.body.onkeyup = (event) => {
   }
 };
 
+setInterval(() => {
+  $('.troll').remove();
+}, 600);
+
 $.fn.extend({
   animateCss: function (animationName) {
     const animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -121,69 +125,67 @@ const writeLine = (text, speed, timeout, callback) => {
   }, timeout);
 };
 
-const skipIntro = () => {
-  if (app.skippedIntro) return;
 
-  app.skippedIntro = true;
 
-  timeouts.forEach((timeout) => {
-    clearTimeout(timeout);
+app.skippedIntro = true;
+
+timeouts.forEach((timeout) => {
+  clearTimeout(timeout);
+});
+
+$('.top-right').remove();
+
+$('#main').fadeOut(100, () => {
+  $('#main').remove();
+
+  $('#marquee').marquee({
+    duration: 15000,
+    gap: 420,
+    delayBeforeStart: 1000,
+    direction: 'left',
+    duplicated: true,
   });
 
-  $('.top-right').remove();
+  setTimeout(() => {
+    $('.brand-header').animateCss(app.effects[Math.floor(Math.random() * app.effects.length)]);
+  }, 200);
 
-  $('#main').fadeOut(100, () => {
-    $('#main').remove();
+  setTimeout(() => {
+    const typed = new Typed('#brand', {
+      strings: app.brandDescription,
+      typeSpeed: 40,
 
-    $('#marquee').marquee({
-      duration: 15000,
-      gap: 420,
-      delayBeforeStart: 1000,
-      direction: 'left',
-      duplicated: true,
+      onComplete: () => {
+        clearCursor();
+      },
     });
+  }, 1350);
 
-    setTimeout(() => {
-      $('.brand-header').animateCss(app.effects[Math.floor(Math.random() * app.effects.length)]);
-    }, 200);
+  setTimeout(() => {
+    if (!app.shouldIgnoreVideo) {
+      app.videoElement.play();
+      app.audioElement.play();
+    }
 
-    setTimeout(() => {
-      const typed = new Typed('#brand', {
-        strings: app.brandDescription,
-        typeSpeed: 40,
+    app.videoElement.addEventListener(
+      'timeupdate',
+      () => {
+        $.cookie('videoTime', app.videoElement.currentTime, { expires: 1 });
+      },
+      false
+    );
 
-        onComplete: () => {
-          clearCursor();
-        },
-      });
-    }, 1350);
+    $('.marquee-container').css('visibility', 'visible').hide().fadeIn(100);
 
-    setTimeout(() => {
-      if (!app.shouldIgnoreVideo) {
-        app.videoElement.play();
-        app.audioElement.play();
-      }
+    $('.marquee-container').animateCss('zoomIn');
 
-      app.videoElement.addEventListener(
-        'timeupdate',
-        () => {
-          $.cookie('videoTime', app.videoElement.currentTime, { expires: 1 });
-        },
-        false
-      );
+    $('.container').fadeIn();
 
-      $('.marquee-container').css('visibility', 'visible').hide().fadeIn(100);
-
-      $('.marquee-container').animateCss('zoomIn');
-
-      $('.container').fadeIn();
-
-      $('.background').fadeIn(200, () => {
-        if (!app.shouldIgnoreVideo) $('#audio').animate({ volume: app.musicVolume }, app.musicFadeIn);
-      });
-    }, 200);
-  });
-};
+    $('.background').fadeIn(200, () => {
+      if (!app.shouldIgnoreVideo) $('#audio').animate({ volume: app.musicVolume }, app.musicFadeIn);
+    });
+  }, 200);
+});
 
 const clearCursor = () => {
   return $('span').siblings('.typed-cursor').css('opacity', '0');
