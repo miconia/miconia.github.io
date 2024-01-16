@@ -27,27 +27,27 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: '⠀telegram⠀',
+      name: <a class="magic-hover magic-hover__square">'⠀telegram⠀'</a>,
       link: 'https://t.me/miconia',
     },
     {
-      name: '⠀instagram⠀',
+      name: <a class="magic-hover magic-hover__square">'⠀instagram⠀'</a>,
       link: 'https://www.instagram.com/miconiia?igsh=c3h2cTI4MnI4enJ1',
     },
     {
-      name: '⠀vk⠀',
+      name: <a class="magic-hover magic-hover__square">'⠀vk⠀'</a>,
       link: 'https://vk.com/miconia',
     },
     {
-      name: '⠀♡⠀',
+      name: <a class="magic-hover magic-hover__square">'⠀♡⠀'</a>,
       link: 'https://ru.pinterest.com/mic0nia/~~/',
     },
     {
-      name: '⠀2008⠀',
+      name: <a class="magic-hover magic-hover__square">'⠀2008⠀'</a>,
       link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
     {
-      name: '⠀fullbright⠀',
+      name: <a class="magic-hover magic-hover__square">'⠀fullbright⠀'</a>,
       link: 'https://steamcommunity.com/groups/600600',
     },
   ];
@@ -55,7 +55,7 @@ $(document).ready(() => {
   for (var i in links) {
     var link = links[i];
 
-    $('#marquee').append(`<a class="magic-hover magic-hover__square" href="${link.link}" target="_BLANK">${link.name}</a>`);
+    $('#marquee').append(`<a href="${link.link}" target="_BLANK">${link.name}</a>`);
 
     link = $('#marquee').children('a').last();
 
