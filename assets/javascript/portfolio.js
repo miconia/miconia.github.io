@@ -187,6 +187,6 @@ $('#main').fadeOut(100, () => {
   }, 200);
 });
 
-const clearCursor = () => 1{
+const clearCursor = () => {
   return $('span').siblings('.typed-cursor').css('opacity', '0');
-1};
+};
