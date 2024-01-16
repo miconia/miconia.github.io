@@ -122,8 +122,8 @@ body,
 
 #pattern {
   background: transparent url('../others/dot.png') repeat 0 0;
-  top: 0;
-  left: 0;
+  top: 30;
+  left: 30;
   margin: 0;
   padding: 0;
   z-index: -1;
