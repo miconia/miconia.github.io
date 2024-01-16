@@ -55,7 +55,7 @@ $(document).ready(() => {
   for (var i in links) {
     var link = links[i];
 
-    $('#marquee').append(`<a href="${link.link}" target="_BLANK">${link.name}</a>`);
+    $('#marquee').append(`<a class="magic-hover magic-hover__square" href="${link.link}" target="_BLANK">${link.name}</a>`);
 
     link = $('#marquee').children('a').last();
 
