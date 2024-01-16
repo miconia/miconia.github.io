@@ -27,27 +27,27 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: <a class="magic-hover magic-hover__square">'⠀telegram⠀'</a>,
+      name: '⠀telegram⠀',
       link: 'https://t.me/miconia',
     },
     {
-      name: <a class="magic-hover magic-hover__square">'⠀instagram⠀'</a>,
+      name: '⠀instagram⠀',
       link: 'https://www.instagram.com/miconiia?igsh=c3h2cTI4MnI4enJ1',
     },
     {
-      name: <a class="magic-hover magic-hover__square">'⠀vk⠀'</a>,
+      name: '⠀vk⠀',
       link: 'https://vk.com/miconia',
     },
     {
-      name: <a class="magic-hover magic-hover__square">'⠀♡⠀'</a>,
+      name: '⠀♡⠀',
       link: 'https://ru.pinterest.com/mic0nia/~~/',
     },
     {
-      name: <a class="magic-hover magic-hover__square">'⠀2008⠀'</a>,
+      name: '⠀2008⠀',
       link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
     {
-      name: <a class="magic-hover magic-hover__square">'⠀fullbright⠀'</a>,
+      name: '⠀fullbright⠀',
       link: 'https://steamcommunity.com/groups/600600',
     },
   ];
