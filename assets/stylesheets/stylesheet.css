@@ -126,8 +126,8 @@ a:hover {
 
 #pattern {
   background: transparent url('../others/dot.png') repeat 0 0;
-  top: 10;
-  left: -10;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   z-index: -1;
@@ -137,8 +137,8 @@ a:hover {
 #pattern,
 #background {
   position: absolute;
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
 }
 
 #background {
