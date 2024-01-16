@@ -12,7 +12,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-  brandDescription = ['quartz', 'kalts since 2017', 'fullbright', 'joined to fatality in 2019', 'kz csgo team', 'differenda v rot ebal', 'mat ego shluha', '~q/\/~'];
+  brandDescription = ['-♡-', '-♡', '-', '---', '↶*ೃ✧˚. ❃ ↷', '✧･ﾟ: *✧･ﾟ:*', '°:. *₊ ° . ° .•', '~m/\/~'];
 
   titleChanger = (text, delay) => {
     if (!text) return;
