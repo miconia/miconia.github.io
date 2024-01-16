@@ -146,7 +146,7 @@ body,
   min-height: 110%;
   width: auto;
   height: auto;
-  transform: translateX(-50%) translateY(-43%);
+  transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   overflow: hidden;
   -webkit-filter: blur(5px);
