@@ -63,7 +63,7 @@ $(document).ready(() => {
   }
 
   if (mobileAndTabletCheck()) {
-    $('#background').replaceWith('<div id="background" style="background-image: url(assets/image/ae3e18841ce9527dd4d47419c2f2ccc4.jpg);"></div>');
+    $('#background').replaceWith('<div id="background" style="background-image: url(assets/image/6ace7d86f9a6a7b4ccf9abd56ac9314c.jpg);"></div>');
 
     app.shouldIgnoreVideo = true;
   }
