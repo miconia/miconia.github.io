@@ -39,10 +39,6 @@ $(document).ready(() => {
       link: 'https://vk.com/miconia',
     },
     {
-      name: '⠀♡⠀',
-      link: 'https://ru.pinterest.com/mic0nia/~~/',
-    },
-    {
       name: '⠀2008⠀',
       link: 'https://steamcommunity.com/profiles/76561197997579653',
     },
